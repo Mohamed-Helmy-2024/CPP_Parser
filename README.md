@@ -1,4 +1,4 @@
-# Recursive-Descent Parser
+# Top-Down Parser
 
 This README describes the structure, grammar rules, and capabilities of a simple recursive‑descent parser designed to validate C‑like syntax. It explains how the grammar works, how parsing is performed, and how errors are detected.
 
