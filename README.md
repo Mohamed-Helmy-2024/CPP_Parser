@@ -29,38 +29,6 @@ This parser is a top‑down recursive‑descent parser that checks whether a pro
 
 Below is the complete grammar used by the parser, rewritten clearly and cleanly:
 
-```
-# Recursive-Descent Parser
-
-This README describes the structure, grammar rules, and capabilities of a simple recursive‑descent parser designed to validate C‑like syntax. It explains how the grammar works, how parsing is performed, and how errors are detected.
-
----
-
-## 📌 **Overview**
-
-This parser is a top‑down recursive‑descent parser that checks whether a program written in a simplified C-like language follows the grammar rules. It identifies syntax errors, reports the exact line number, and displays expected vs. found tokens.
-
----
-
-## 🧩 **Main Capabilities**
-
-* Parse C‑style code according to a defined grammar
-* Detect multiple syntax errors in a single run
-* Report:
-
-  * Line number
-  * Expected token(s)
-  * Found token
-* Support expressions, assignments, if/else, while, for, and blocks
-* Validate function structure: only `int main()` is allowed
-* Handle operators and precedence through grammar rules
-
----
-
-## 📘 **Grammar Rules (Rewritten in Conceptual Meaning-Based Format)**
-
-Below are the grammar rules rewritten in a **clearer, meaning-focused form** instead of symbolic BNF. Each rule now describes *what it means* in the language.
-
 ### 🔹 Function Rule (FUNC)
 
 A valid program must begin with **exactly one function**:
@@ -161,7 +129,7 @@ A block is:
 * An opening `{`
 * Followed by one or more statements (X)
 * Ending with a closing `}`
-```
+
 
 ---
 
