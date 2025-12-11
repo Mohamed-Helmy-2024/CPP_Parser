@@ -4,13 +4,13 @@ This README describes the structure, grammar rules, and capabilities of a simple
 
 ---
 
-## 📌 **Overview**
+##  **Overview**
 
 This parser is a top‑down recursive‑descent parser that checks whether a program written in a simplified C-like language follows the grammar rules. It identifies syntax errors, reports the exact line number, and displays expected vs. found tokens.
 
 ---
 
-## 🧩 **Main Capabilities**
+##  **Main Capabilities**
 
 * Parse C‑style code according to a defined grammar
 * Detect multiple syntax errors in a single run
@@ -25,7 +25,7 @@ This parser is a top‑down recursive‑descent parser that checks whether a pro
 
 ---
 
-## 📘 **Grammar Rules**
+##  **Grammar Rules**
 
 Below is the complete grammar used by the parser, rewritten clearly and cleanly:
 
@@ -56,7 +56,7 @@ BLOCK      => { X }
 
 ---
 
-## 🏗️ **Parser Architecture**
+##  **Parser Architecture**
 
 The parser follows classic recursive‑descent structure:
 
@@ -75,7 +75,7 @@ The parser follows classic recursive‑descent structure:
 
 ---
 
-## ❗ Syntax Error Reporting
+##  Syntax Error Reporting
 
 The parser reports detailed errors:
 
@@ -96,55 +96,42 @@ Found: '{'
 
 ---
 
-## 🧪 Example Accepted Code
+##  Example Accepted Code
 
 ```
 int main() {
-    int x = 5;
-    if (x > 0) {
-        x += 1;
+    int x,y;
+    // This is a single-line comment
+    if (x == 42) {
+        /* This is
+           a block
+           comment */
+        x = x-3;
+    } else {
+        y = 3.1; // Another comment
     }
-    while (x < 10) {
-        x = x + 1;
-    }
+    return 0;
 }
 ```
 
 ---
 
-## ❌ Example With Errors
-
-```
-int main( {
-    int x 5
-```
-
-Parser output:
-
-```
-Line 1: Expected ')', found '{'
-Line 2: Expected '=', found '5'
-Line 2: Expected ';', found EOF
-```
-
 ---
 
-## 📦 Folder Structure Example
+##  Folder Structure Example
 
 ```
 /project
-│── parser.py
-│── tokenizer.py
-│── grammar.md
+│── scanner.py
+│── cpp_parser.py
 │── README.md
-│── tests/
-│     ├── valid_code.c
-│     └── invalid_code.c
+│── test.cpp
+│── text.txt
 ```
 
 ---
 
-## 🚀 Future Improvements
+##  Future Improvements
 
 * Add operator precedence parsing
 * Support multiple functions
@@ -153,7 +140,7 @@ Line 2: Expected ';', found EOF
 
 ---
 
-## 📝 License
+##  License
 
 MIT License — free for personal and academic use.
 
