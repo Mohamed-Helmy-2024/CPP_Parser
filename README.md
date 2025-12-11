@@ -150,7 +150,7 @@ The parser follows classic recursive‑descent structure:
 * `parse_expr()` → matches identifiers with operators
 * `parse_if()`, `parse_while()`, `parse_for()` → control structures
 
-```
+
 
 ### Features:
 
@@ -181,8 +181,6 @@ int main() {
 
 ---
 
----
-
 ##  Folder Structure Example
 
 ```
@@ -203,16 +201,3 @@ int main() {
 * Add array declarations & pointers
 * Introduce static semantic checks (type checking)
 
----
-
-##  License
-
-MIT License — free for personal and academic use.
-
----
-
-If you'd like, I can generate:
-
-* A beautifully formatted PDF version
-* A Markdown version with syntax highlighting
-* A GitHub‑ready folder including parser code and tests
